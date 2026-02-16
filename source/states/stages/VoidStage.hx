@@ -1,4 +1,4 @@
-package source.states.stages;
+package states.stages;
 
 class VoidStage extends BaseStage
 {
