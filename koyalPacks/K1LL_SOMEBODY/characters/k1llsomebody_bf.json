@@ -1,0 +1,80 @@
+{
+	"_editor_isPlayer": true,
+	"animations": [
+		{
+			"anim": "idle",
+			"fps": 24,
+			"indices": [],
+			"loop": false,
+			"name": "bf tanger anim idle",
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"anim": "singLEFT",
+			"fps": 24,
+			"indices": [],
+			"loop": false,
+			"name": "bf tanger anim left",
+			"offsets": [
+				29,
+				-2
+			]
+		},
+		{
+			"anim": "singDOWN",
+			"fps": 24,
+			"indices": [],
+			"loop": false,
+			"name": "bf tanger anim down",
+			"offsets": [
+				56,
+				-35
+			]
+		},
+		{
+			"anim": "singUP",
+			"fps": 24,
+			"indices": [],
+			"loop": false,
+			"name": "bf tanger anim up",
+			"offsets": [
+				28,
+				17
+			]
+		},
+		{
+			"anim": "singRIGHT",
+			"fps": 24,
+			"indices": [],
+			"loop": false,
+			"name": "bf tanger anim right",
+			"offsets": [
+				-45,
+				-15
+			]
+		}
+	],
+	"camera_position": [
+		-100,
+		100
+	],
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"healthicon": "bf",
+	"image": "characters/k1llsomebody_bf",
+	"no_antialiasing": false,
+	"position": [
+		0,
+		0
+	],
+	"scale": 1,
+	"sing_duration": 4,
+	"vocals_file": ""
+}
