@@ -2,13 +2,11 @@ package backend;
 
 #if DISCORD_ALLOWED
 import Sys.sleep;
-import sys.thread.Thread;
-import lime.app.Application;
-
+import flixel.util.FlxStringUtil;
 import hxdiscord_rpc.Discord;
 import hxdiscord_rpc.Types;
-
-import flixel.util.FlxStringUtil;
+import lime.app.Application;
+import sys.thread.Thread;
 
 class DiscordClient
 {
@@ -108,7 +106,7 @@ class DiscordClient
 		presence.details = details;
 		presence.smallImageKey = smallImageKey;
 		presence.largeImageKey = largeImageKey;
-		presence.largeImageText = "Engine Version: " + states.MainMenuState.psychEngineVersion;
+		presence.largeImageText = "Engine Version: " + states.MainMenuState.koyalVer;
 		// Obtained times are in milliseconds so they are divided so Discord can use it
 		presence.startTimestamp = Std.int(startTimestamp / 1000);
 		presence.endTimestamp = Std.int(endTimestamp / 1000);

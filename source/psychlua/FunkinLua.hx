@@ -1,47 +1,39 @@
 #if LUA_ALLOWED
 package psychlua;
 
-import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
-
-import openfl.Lib;
-import openfl.utils.Assets;
-import openfl.display.BitmapData;
+import backend.WeekData;
+import cutscenes.DialogueBoxPsych;
 import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxState;
-
+import flixel.input.gamepad.FlxGamepadInputID;
+import flixel.input.keyboard.FlxKey;
+import haxe.Json;
+import objects.Character;
+import objects.Note;
+import objects.NoteSplash;
+import objects.StrumNote;
+import openfl.Lib;
+import openfl.display.BitmapData;
+import openfl.utils.Assets;
+import psychlua.DebugLuaText;
+import psychlua.LuaUtils.LuaTweenOptions;
+import psychlua.LuaUtils;
+import psychlua.ModchartSprite;
+import states.FreeplayState;
+import states.MainMenuState;
+import states.StoryMenuState;
+import substates.GameOverSubstate;
+import substates.PauseSubState;
 #if (!flash && sys)
 import flixel.addons.display.FlxRuntimeShader;
 #end
 
-import cutscenes.DialogueBoxPsych;
-
-import objects.StrumNote;
-import objects.Note;
-import objects.NoteSplash;
-import objects.Character;
-
-import states.MainMenuState;
-import states.StoryMenuState;
-import states.FreeplayState;
-
-import substates.PauseSubState;
-import substates.GameOverSubstate;
-
-import psychlua.LuaUtils;
-import psychlua.LuaUtils.LuaTweenOptions;
 #if HSCRIPT_ALLOWED
 import psychlua.HScript;
 #end
-import psychlua.DebugLuaText;
-import psychlua.ModchartSprite;
-
-import flixel.input.keyboard.FlxKey;
-import flixel.input.gamepad.FlxGamepadInputID;
-
-import haxe.Json;
 
 class FunkinLua {
 	public var lua:State = null;
@@ -84,7 +76,7 @@ class FunkinLua {
 		set('Function_Continue', LuaUtils.Function_Continue);
 		set('luaDebugMode', false);
 		set('luaDeprecatedWarnings', true);
-		set('version', MainMenuState.psychEngineVersion.trim());
+		set('version', MainMenuState.koyalVer.trim());
 		set('modFolder', this.modFolder);
 
 		// Song/Week shit
