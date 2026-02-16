@@ -3,7 +3,6 @@ package substates;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import states.MainMenuState;
-import states.TitleState;
 
 class OutdatedSubState extends MusicBeatSubstate
 {
@@ -47,7 +46,7 @@ class OutdatedSubState extends MusicBeatSubstate
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;
-				CoolUtil.browserLoad("https://github.com/ShadowMario/FNF-PsychEngine/releases");
+				CoolUtil.browserLoad("https://github.com/macohi/FNF-Koyal/releases");
 			}
 			else if(controls.BACK) {
 				leftState = true;
