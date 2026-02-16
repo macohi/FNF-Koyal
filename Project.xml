@@ -179,4 +179,6 @@
 	<icon path="art/icons/icon32.png" size='32'/>
 	<icon path="art/icons/icon64.png" size='64'/>
 	<icon path="art/icons/iconOG.png" />
+
+	<haxeflag name="--dce full" if="release"/>
 </project>
