@@ -7,15 +7,10 @@ import android.content.Context;
 import backend.Highscore;
 import debug.FPSCounter;
 import flixel.FlxGame;
-import flixel.FlxState;
-import flixel.graphics.FlxGraphic;
-import haxe.io.Path;
 import lime.app.Application;
-import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Sprite;
 import openfl.display.StageScaleMode;
-import openfl.events.Event;
 import states.TitleState;
 #if HSCRIPT_ALLOWED
 import crowplexus.iris.Iris;
@@ -27,7 +22,7 @@ import lime.graphics.Image;
 #end
 
 #if desktop
-import backend.ALSoftConfig; // Just to make sure DCE doesn't remove this, since it's not directly referenced anywhere else.
+
 #end
 
 //crash handler stuff
@@ -88,7 +83,7 @@ class Main extends Sprite
 		#end
 		Mods.loadTopMod();
 
-		FlxG.save.bind('funkin', CoolUtil.getSavePath());
+		FlxG.save.bind('koyal', CoolUtil.getSavePath());
 		Highscore.load();
 
 		#if HSCRIPT_ALLOWED
