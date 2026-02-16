@@ -1,16 +1,14 @@
 package objects;
 
+import backend.Song;
 import backend.animation.PsychAnimationController;
-
-import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
-
+import flixel.util.FlxSort;
+import haxe.Json;
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
-import haxe.Json;
 
-import backend.Song;
-import states.stages.objects.TankmenBG;
+// import states.stages.objects.TankmenBG;
 
 typedef CharacterFile = {
 	var animations:Array<AnimArray>;
@@ -419,7 +417,7 @@ class Character extends FlxSprite
 					for (songNotes in section.sectionNotes)
 						animationNotes.push(songNotes);
 
-			TankmenBG.animationNotes = animationNotes;
+			// TankmenBG.animationNotes = animationNotes;
 			animationNotes.sort(sortAnims);
 		}
 		catch(e:Dynamic) {}

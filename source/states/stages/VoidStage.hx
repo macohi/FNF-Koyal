@@ -1,5 +1,5 @@
 package source.states.stages;
 
-class Void extends BaseStage
+class VoidStage extends BaseStage
 {
 }

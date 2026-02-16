@@ -372,7 +372,7 @@ class PlayState extends MusicBeatState
 
 		switch(curStage)
 		{
-			case 'void': new Void();
+			case 'void': new VoidStage();
 		}
 
 		if(isPixelStage) introSoundsSuffix = '-pixel';
